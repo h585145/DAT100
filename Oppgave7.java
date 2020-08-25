@@ -6,15 +6,23 @@ public class Oppgave7 {
 
 	public static void main(String[] args) {
 		
-		for(int antallStudenter=0; antallStudenter<10; antallStudenter++) {
+		//b)
+		for(int antallStudenter = 0; antallStudenter < 10; antallStudenter++) {
 		
 			String poengsum = showInputDialog("Poengsum:");
 		
 			int poengsumTall = Integer.parseInt(poengsum);
 					
 			if(poengsumTall < 0 || poengsumTall > 100) {
-			
-				showMessageDialog(null, "Poengsummen kan ikke være negativ eller over 100");
+				
+				//c)			
+				do {
+					
+					poengsum = showInputDialog("Poengsummen kan ikke være negativ eller over 100" + "\n Skriv inn nytt tall");
+					
+					poengsumTall = Integer.parseInt(poengsum);
+					
+				}while(poengsumTall < 0 || poengsumTall > 100);
 			
 			}
 		
