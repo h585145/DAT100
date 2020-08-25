@@ -6,50 +6,54 @@ public class Oppgave7 {
 
 	public static void main(String[] args) {
 		
-		String poengsum = showInputDialog("Poengsum:");
+		for(int antallStudenter=0; antallStudenter<10; antallStudenter++) {
 		
-		int poengsumTall = Integer.parseInt(poengsum);
+			String poengsum = showInputDialog("Poengsum:");
 		
-		if(poengsumTall < 0 || poengsumTall > 100) {
+			int poengsumTall = Integer.parseInt(poengsum);
+					
+			if(poengsumTall < 0 || poengsumTall > 100) {
 			
-			showMessageDialog(null, "Poengsummen kan ikke være negativ eller over 100");
+				showMessageDialog(null, "Poengsummen kan ikke være negativ eller over 100");
 			
-		}
+			}
 		
-		if(poengsumTall <= 100 && poengsumTall >= 90) {
+			if(poengsumTall <= 100 && poengsumTall >= 90) {
 			
-			showMessageDialog(null, "Karakter A");
+				showMessageDialog(null, "Karakter A");
 			
-		}
+			}
 		
-		if(poengsumTall <= 89 && poengsumTall >= 80) {
+			if(poengsumTall <= 89 && poengsumTall >= 80) {
 			
-			showMessageDialog(null, "Karakter B");
+				showMessageDialog(null, "Karakter B");
 			
-		}
+			}
 		
-		if(poengsumTall <= 79 && poengsumTall >= 60) {
+			if(poengsumTall <= 79 && poengsumTall >= 60) {
 			
-			showMessageDialog(null, "Karakter C");
+				showMessageDialog(null, "Karakter C");
 			
-		}
+			}
 		
-		if(poengsumTall <= 59 && poengsumTall >= 50) {
+			if(poengsumTall <= 59 && poengsumTall >= 50) {
 			
-			showMessageDialog(null, "Karakter D");
+				showMessageDialog(null, "Karakter D");
 			
-		}
+			}
 		
-		if(poengsumTall <= 49 && poengsumTall >= 40) {
+			if(poengsumTall <= 49 && poengsumTall >= 40) {
 			
-			showMessageDialog(null, "Karakter E");
+				showMessageDialog(null, "Karakter E");
 			
-		}
+			}
 		
-		if(poengsumTall <= 39 && poengsumTall >= 0) {
+			if(poengsumTall <= 39 && poengsumTall >= 0) {
 			
-			showMessageDialog(null, "Karakter F");
+				showMessageDialog(null, "Karakter F");
 			
+			}
+		
 		}
 
 	}
